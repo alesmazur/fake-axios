@@ -6,6 +6,4 @@ const fakeAxios = (uri) =>
       .catch((error) => reject(error))
   );
 
-fakeAxios("https://jsonplaceholder.typicode.com/posts/1")
-  .then((response) => console.log(response))
-  .catch((err) => console.log(err));
+export default fakeAxios;
